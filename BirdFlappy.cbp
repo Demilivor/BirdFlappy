@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="BirdFlappy" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/BirdFlappy" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DSFML_STATIC" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-s-d" />
+					<Add library="sfml-window-s-d" />
+					<Add library="sfml-audio-s-d" />
+					<Add library="sfml-system-s-d" />
+					<Add library="jpeg" />
+					<Add library="freetype" />
+					<Add library="gdi32" />
+					<Add library="opengl32" />
+					<Add library="winmm" />
+					<Add library="vorbisenc" />
+					<Add library="vorbisfile" />
+					<Add library="openal32" />
+					<Add library="vorbis" />
+					<Add library="FLAC" />
+					<Add library="ogg" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/BirdFlappy" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DSFML_STATIC" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics-s" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-audio-s" />
+					<Add library="sfml-system-s" />
+					<Add library="jpeg" />
+					<Add library="freetype" />
+					<Add library="gdi32" />
+					<Add library="opengl32" />
+					<Add library="winmm" />
+					<Add library="vorbisfile" />
+					<Add library="vorbisenc" />
+					<Add library="openal32" />
+					<Add library="vorbis" />
+					<Add library="FLAC" />
+					<Add library="ogg" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Weffc++" />
+			<Add option="-pedantic" />
+			<Add option="-w" />
+			<Add option="-Wextra" />
+			<Add option="-std=c++11" />
+			<Add option="-DSFML_STATIC" />
+			<Add directory="thirdParty/SFML-2.4.2/include" />
+			<Add directory="../BirdFlappy" />
+		</Compiler>
+		<Linker>
+			<Add directory="thirdParty/SFML-2.4.2/lib" />
+		</Linker>
+		<Unit filename="inc/AnimatedSprite.hpp" />
+		<Unit filename="inc/Bird.hpp" />
+		<Unit filename="inc/BirdFlappy.hpp" />
+		<Unit filename="inc/Button.hpp" />
+		<Unit filename="inc/GameEngine.hpp" />
+		<Unit filename="inc/GameObject.hpp" />
+		<Unit filename="inc/GameResources.hpp" />
+		<Unit filename="inc/GameplayController.hpp" />
+		<Unit filename="inc/MainMenu.hpp" />
+		<Unit filename="inc/NonCopyable.hpp" />
+		<Unit filename="inc/PipesGenerator.hpp" />
+		<Unit filename="inc/RepeatableTextureRect.hpp" />
+		<Unit filename="inc/ScoresTable.hpp" />
+		<Unit filename="src/AnimatedSprite.cpp" />
+		<Unit filename="src/Bird.cpp" />
+		<Unit filename="src/Button.cpp" />
+		<Unit filename="src/GameEngine.cpp" />
+		<Unit filename="src/GameObject.cpp" />
+		<Unit filename="src/GameplayController.cpp" />
+		<Unit filename="src/Main.cpp" />
+		<Unit filename="src/MainMenu.cpp" />
+		<Unit filename="src/PipesGenerator.cpp" />
+		<Unit filename="src/RepeatableTextureRect.cpp" />
+		<Unit filename="src/ScoresTable.cpp" />
+		<Unit filename="thirdParty/collision/Collision.hpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
